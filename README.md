@@ -10,7 +10,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">https://github.com/the-turing-index/web-app</h3>
+  <h3 align="center">https://github.com/the-turing-index/api</h3>
 
   <p align="center">
     <br />
@@ -109,7 +109,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/the-turing-index/web-app/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/the-turing-index/api/issues) for a list of proposed features (and known issues).
 
 
 
@@ -162,16 +162,16 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/leighlars/WeatherOrNot.svg?style=flat-square
-[contributors-url]: https://github.com/the-turing-index/web-app/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/the-turing-index/web-app.svg?style=flat-square
-[forks-url]: https://github.com/the-turing-index/web-app/network/members
-[stars-shield]: https://img.shields.io/github/stars/the-turing-index/web-app.svg?style=flat-square
-[stars-url]: https://github.com/the-turing-index/web-app/stargazers
-[issues-shield]: https://img.shields.io/github/issues/the-turing-index/web-app.svg?style=flat-square
-[issues-url]: https://github.com/the-turing-index/web-app/issues
-[license-shield]: https://img.shields.io/github/license/the-turing-index/web-app.svg?style=flat-square
-[license-url]: https://github.com/the-turing-index/web-app/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/the-turing-index/api.svg?style=flat-square
+[contributors-url]: https://github.com/the-turing-index/api/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/the-turing-index/api.svg?style=flat-square
+[forks-url]: https://github.com/the-turing-index/api/network/members
+[stars-shield]: https://img.shields.io/github/stars/the-turing-index/api.svg?style=flat-square
+[stars-url]: https://github.com/the-turing-index/api/stargazers
+[issues-shield]: https://img.shields.io/github/issues/the-turing-index/api.svg?style=flat-square
+[issues-url]: https://github.com/the-turing-index/api/issues
+[license-shield]: https://img.shields.io/github/license/the-turing-index/api.svg?style=flat-square
+[license-url]: https://github.com/the-turing-index/api/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/josh-sevy
 [product-screenshot]: images/screenshot.png
