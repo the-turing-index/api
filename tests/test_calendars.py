@@ -12,17 +12,23 @@ def test_success():
     assert response.status_code == 200
     assert response.content_type == 'application/json'
 
-    assert data['data']['id'] == None
-    assert data['data']['type'] == 'calendars'
+    data = data['data']
 
-    attributes = data['data']['attributes']
+    assert len(data) == 3
+    assert data['id'] == None
+    assert data['type'] == 'calendars'
+    assert data['attributes']
+
+
+    attributes = data['attributes']
     assert len(attributes) == 5
 
-    assert attributes[0]['mod1']
-    assert attributes[0]['mod1']['frontend']
-    assert attributes[0]['mod1']['frontend'] == {'zoom_link': ''}
-    assert attributes[0]['mod1']['backend']
-    assert attributes[0]['mod1']['backend'] == {'zoom_link': ''}
+    mod1 = attributes[0]['mod1']
+    assert mod1
+    assert mod1['frontend']
+    assert mod1['frontend'] == {'zoom_link': ''}
+    assert mod1['backend']
+    assert mod1['backend'] == {'zoom_link': ''}
 
     mod2 = attributes[1]['mod2']
     assert mod2
@@ -38,10 +44,5 @@ def test_success():
     assert mod3['backend']
     assert mod3['backend'] == {'zoom_link': ''}
 
-    assert attributes[3]['mod4']
-    assert attributes[3]['mod4']['frontend']
-    assert attributes[3]['mod4']['frontend'] == {'zoom_link': ''}
-    assert attributes[3]['mod4']['backend']
-    assert attributes[3]['mod4']['backend'] == {'zoom_link': ''}
-
+    assert attributes[3]['mod4'] == {'zoom_link': ''}
     assert attributes[4]['community']  == {'zoom_link': ''}
