@@ -2,7 +2,6 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <br />
 <p align="center">
@@ -36,75 +35,98 @@
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
-* [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
-
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue.
-
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+This is the Backend API for The Turing Index. It is a RESTful API that serves JSON.
 
 ### Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
 
+- Python 3.8.6
+- Flask 1.1.2
+- Continuous Integration with Travis CI
+- Continuous Deployment to Heroku
 
-
-<!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+You can consume the API at `` or set it up locally for your development environment by following the instructions below.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-```sh
-npm install npm@latest -g
-```
+- Get Python Version 3.8.6
+  - TODO: Gist for `pyenv` instructions
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-```sh
-git clone https://github.com/your_username_/Project-Name.git
-```
-3. Install NPM packages
-```sh
-npm install
-```
-4. Enter your API in `config.js`
-```JS
-const API_KEY = 'ENTER YOUR API';
-```
-
-
+- Clone down this repo and `cd` into it
+- Activate a virtual environment
+- Install the dependencies
+- Start the server: `python main.py`
+- The API will run at `localhost:5000`
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Request:
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+```
+GET '/calendars'
+```
 
+Response:
 
+```
+{
+  "data": {
+    "id": null,
+    "type": "calendars",
+    "attributes": [
+      {
+        "mod1": {
+          "frontend": {
+            "zoom_link": ""
+          },
+          "backend": {
+            "zoom_link": ""
+          }
+        }
+      },
+      {
+        "mod2": {
+          "frontend": {
+            "zoom_link": ""
+          },
+          "backend": {
+            "zoom_link": ""
+          }
+        }
+      },
+      {
+        "mod3": {
+          "frontend": {
+            "zoom_link": ""
+          },
+          "backend": {
+            "zoom_link": ""
+          }
+        }
+      },
+      {
+        "mod4": {
+          "zoom_link": ""
+        }
+      },
+      {
+        "community": {
+          "zoom_link": ""
+        }
+      }
+    ]
+  }
+}
+```
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -112,6 +134,9 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 See the [open issues](https://github.com/the-turing-index/api/issues) for a list of proposed features (and known issues).
 
 
+### Known Issues
+
+The JSON response for `/calendars` currently does not serve live links to any meetings.
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -124,19 +149,11 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-
-
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
@@ -173,5 +190,4 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 [license-shield]: https://img.shields.io/github/license/the-turing-index/api.svg?style=flat-square
 [license-url]: https://github.com/the-turing-index/api/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/josh-sevy
 [product-screenshot]: images/screenshot.png
